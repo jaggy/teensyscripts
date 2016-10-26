@@ -1,14 +1,20 @@
 #define DELAY 500
 
 void setup() {
-  // put your setup code here, to run once:
+  wait();
 
-  open_application("iTerm");
+  open_application("Terminal.app");
+  
+  type("say boooooooo");
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 
+}
+
+void wait() {
+  delay(DELAY);
 }
 
 /**
@@ -64,5 +70,7 @@ void open_application(String application) {
   open_application_switcher();
 
   type(application);
+
+  wait();
 }
 
