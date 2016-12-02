@@ -1,0 +1,8 @@
+
+namespace Terminal {
+  void say() {
+    
+  }
+}
+
+
